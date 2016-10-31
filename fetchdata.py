@@ -12,16 +12,15 @@ doi = "10.1101/SQB.1953.018.01.020" # a paper by Watson and Crick
 response = requests.get(api + doi) # this is the request
 print(response.status_code) 
 # checking to see whether our response worked out
-    
-    # you'll likely encounter one of these:
-        # 200 - everything went okay <- what you're hoping for!
-        # 404 - not found/no data available
-    
-    # but you might also run into these
-        # 301 - server redirect
-        # 401 - you're not authenticated
-        # 400 - bad request
-        # 403 - resource being accessed is forbidden
+# you'll likely encounter one of these:
+    # 200 - everything went okay <- what you're hoping for!
+    # 404 - not found/no data available
+
+# but you might also run into these
+    # 301 - server redirect
+    # 401 - you're not authenticated
+    # 400 - bad request
+    # 403 - resource being accessed is forbidden
 
 result = response.json() # converts the data you've fetched to dictionary format
 type(result) # should return dict
