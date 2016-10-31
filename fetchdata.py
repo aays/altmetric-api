@@ -39,7 +39,7 @@ with open('results.txt', 'w') as f:
 # if you want to check your current working directory first
 import os
 os.getcwd() # get current wd
-os.chdir('/Users/Me/Desktop') # change wd
+os.chdir('/Users/Me/Desktop/') # change wd
 
 # using the time library to stagger loop functionality
 # if you're fetching multiple records through a loop, Altmetric recommends making a maximum of one request per second
