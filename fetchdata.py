@@ -1,6 +1,7 @@
 '''
 Code for the 'Fetching Data from the Altmetric API' instructional video. 
 Produced for STEM Fellowship's Big Data Challenge.
+If there are any questions, feel free to email me at ahmed.hasan@stemfellowship.org
 '''
 
 import requests
